@@ -1,0 +1,35 @@
+import java.util.Scanner;
+/**
+ * Write a description of class isPrime here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class isPrime
+{
+    // instance variables - replace the example below with your own
+    private int number;
+
+    /**
+     * Constructor for objects of class isPrime
+     */
+    public boolean isPrime()
+    {
+        Scanner scanner = new Scanner (System.in);
+        System.out.println("Please enter a number");
+        number = scanner.nextInt();
+        for(int i=2; i<number; i++)
+        {
+            if( number != i && number % i == 0 && number != 0)
+            {
+                System.out.println("This number is not prime");
+                return false;
+            } else {
+                System.out.println("This number is prime");
+            }
+        }
+
+        return true;
+
+    }
+}
