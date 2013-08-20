@@ -1,9 +1,9 @@
 import java.util.Scanner;
 /**
- * Write a description of class isPrime here.
+ * determines whether the entered number is a prime number or not
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Ashwini Iyer
+ * 8/19/13
  */
 public class isPrime
 {
