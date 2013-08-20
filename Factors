@@ -1,0 +1,32 @@
+import java.util.Scanner;
+/**
+ * finds all the factors of the number the user entered
+ * 
+ * @author (Ashwini) 
+ * @version (8/19/13)
+ */
+public class Factors
+{
+    // instance variables - replace the example below with your own
+    private int number;
+
+    /**
+     * Constructor for objects of class PrimeFactors
+     */
+    public Factors()
+    {
+        Scanner scanner = new Scanner (System.in);
+        System.out.println("Please enter a positive number");
+        number = scanner.nextInt();
+        System.out.println("you entered " + number);
+        System.out.println("lets find its factors.");
+        for(int i=1; i<= number; i++)
+        {
+            if( number % i == 0)
+            {
+                System.out.println(i);
+
+            }
+        }
+    }
+}
